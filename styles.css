@@ -1,0 +1,110 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.card{
+	position: absolute;
+	width: 280px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: all 0.5s ease-out;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px #919191ff;
+	transform-style: preserve-3d;
+	padding: 0px 20px;
+	z-index: -2;
+	cursor: pointer;
+}
+.card p{
+	transform: translateZ(200px);
+}
+.card .product{
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%) translateZ(0px);
+	width: 220px;
+	height: 120px;
+	filter: saturate(105%);
+	transition: all 0.5s ease-out;
+	z-index: 1;
+}
+.card .back{
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%,-50%) translateZ(0px);
+	width: 150px;
+	height: 150px;
+	transition: all 0.5s ease-out;
+	z-index: 0;
+	filter: saturate(110%);
+}
+.card .title{
+	position: absolute;
+	left: 30px;
+	top: 200px;
+	transform: translateX(0%);
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.88rem;
+	font-weight: 200;
+	transition: all 0.5s ease-out;
+	z-index: 1;
+}
+.card .text{
+	position: absolute;
+	left: 30px;
+	top: 250px;
+	font-size: 14px;
+	transform: translateZ(0px);
+	font-family: 'Poppins', sans-serif;
+	padding-right: 5px;
+	z-index: 1;
+}
+.card .buy{
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%) translateZ(0px);
+	width: 80%;
+	height: 30px;
+	background-color: #d10000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	color: #fff;
+}
+.card .size{
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	right: 30px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.card .size div{
+	position: relative;
+	bottom: 100px;
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px #919191ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 17px;
+}
+.card .size div:hover{
+	color: #fff;
+	background: #d10000;
+	box-shadow: none;
+}
