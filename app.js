@@ -1,3 +1,4 @@
+const mouse = document.querySelector('.mouse');
 const card = document.querySelector('.card');
 const shoe = card.querySelector('img');
 const title = card.querySelector('.title');
@@ -23,6 +24,11 @@ card.addEventListener('mouseleave', (e) => {
 	shoe.style.width = "220px";
 	shoe.style.height = "120px";
 	shoe.style.transform = "translateX(-50%) translateZ(0px)";
-	card.style.transform = `translate(-50%,-50%)`;
-			
+	card.style.transform = `translate(-50%,-50%)`;		
+});
+
+document.addEventListener('mousemove', (e) => {
+	mouse.style.left = e.pageX + "px";
+	mouse.style.top = e.pageY + "px";
+	mouse.style.transform = "translate(-50%,-50%)";
 });
