@@ -9,7 +9,7 @@ card.addEventListener('mousemove', (e) => {
 	title.style.transform = "translateZ(140px)";
 	card.style.transform = `translate(-50%,-50%) rotateY(${xaxis}deg) rotateX(${yaxis}deg)`;
 });
- 
+  
 card.addEventListener('mouseenter', (e) => {
 	card.style.transition = "none";
 	shoe.style.width = "235px";
