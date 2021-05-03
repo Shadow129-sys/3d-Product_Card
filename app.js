@@ -2,7 +2,7 @@ const mouse = document.querySelector('.mouse');
 const card = document.querySelector('.card');
 const shoe = card.querySelector('img');
 const title = card.querySelector('.title');
-   
+  
 card.addEventListener('mousemove', (e) => {
 	let xaxis = (window.innerWidth/2 - e.pageX) / 15;
 	let yaxis = (window.innerHeight/2 - e.pageY) / 15;
